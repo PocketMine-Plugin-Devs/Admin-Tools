@@ -34,6 +34,10 @@ class Report implements Plugin{
 				$output = "You have made a report";
 				$this->api->plugin->writeYAML($this->api->plugin->configPath($this) ."Reports.yml", $this->config);
 		}
+		else
+		{
+			$output = "Report not sent..."
+		}
 		return $output;
 	}
 	public function __destruct(){}
